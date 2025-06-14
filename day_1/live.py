@@ -7,6 +7,14 @@
 # A variable is like a container that holds data.
 # You assign values to variables using the = symbol.
 
+'''
+name = "Kevin"
+name1 = "Abhi"
+
+print(name1)
+'''
+
+
 # Strings are wrapped in quotes, numbers are not.
 # Booleans are written as True or False (capitalized).
 
@@ -23,12 +31,60 @@
 # - bool (True or False)
 # - NoneType (represents 'no value')
 
+name = "kevin" #str
+name = 3 #int
+name = 3.0 #float
+name = True #bool
+name = None #none
+# print(name, type(name))
+
+'''
+Exercise 1: What data type should 
+each of these variables be?
+
+first_name = str
+number_of_students = int
+price_of_item = float
+is_logged_in = bool
+temperature = float
+user_age = int
+has_paid_subscription = bool
+street_address = str
+phone_number = str
+total_score = float/int
+average_grade = float
+product_description = str
+zip_code = str
+'''
+# zip_code = 08820
+zip_code = int("08820")
+# print(zip_code)
+
+
 # You can check a variable's type using the `type()` function.
 
 # ✅ BASIC OUTPUT
 
 # We use the print() function to display output on the screen.
 # You can print text, variables, or both together.
+
+print("Hello, World!")
+
+print("Hello,", "World!", "I am Here!")
+
+w = "World!"
+print("Hello", w, "I AM HERE!", sep="-")
+
+
+
+p1 = "973"
+p2 = "525"
+p3 = "4577"
+
+print()
+# (973)-525-4577
+
+
 
 # Strings can be combined with commas (which adds spaces),
 # or with f-strings (which embed values directly inside the text).
@@ -41,8 +97,13 @@
 
 # The input() function lets you collect information from the user.
 # It always returns a string, no matter what the user types.
-
 # If you want to work with numbers, you need to convert the input using int() or float().
+number = input("Enter your favorite number: ")
+number = None
+# float(number)
+# int(number)
+# str(number)
+print(number, type(number))
 
 # Always explain that improper input (like typing a letter when expecting a number)
 # will cause an error — we’ll handle that later when we learn error handling.
