@@ -86,49 +86,53 @@ z = x + y #helloworld
 
 z = "hello""world"
 # Multiplying strings
+'''
 z = "kevin" * 3
-# print(z)
+print(z)
+'''
 
 ## Escape Characters
-
-# k = "My name \nis "Kevin""
-# print(k,sep="", end="")
-
+'''
+k = "My name \nis "Kevin""
+print(k,sep="", end="")
+'''
 # print()
 
 
 
 
 
-# name = 
+'''
 "kevin"
 "3 + 5"
 "01234"
 s = "first_index ... last_index"
 s_l = len(s)
-# print(s_l)
-# print(s[0])
-# print(s[s_l-1])
-# "a"
-# 00
-# "alphabet"
-# 07
-# print(name[0])
-# 
-# expression = input("Enter expression: ")
-# first_number = expression[0]
-# second_number = expression[len(expression)-1]
-# operator = expression[2]
+print(s_l)
+print(s[0])
+print(s[s_l-1])
+"a"
+00
+"alphabet"
+07
+print(name[0])
 
-# print(f"{first_number} {operator} {second_number} = {int(first_number) + int(second_number)}")
+expression = input("Enter expression: ")
+first_number = expression[0]
+second_number = expression[len(expression)-1]
+operator = expression[2]
+
+print(f"{first_number} {operator} {second_number} = {int(first_number) + int(second_number)}")
 
 
-# numbers = input("Input your numbers separated by a space")
-# num1, num2 = numbers.split()
-# num1 = float(num1.replace(","," "))
-# num2 = float(num1.replace(","," "))
-# result  = num1 + num2
-# print(result)
+numbers = input("Input your numbers separated by a space")
+num1, num2 = numbers.split()
+num1 = float(num1.replace(","," "))
+num2 = float(num1.replace(","," "))
+result  = num1 + num2
+print(result)
+'''
+
 
 
 
@@ -140,17 +144,19 @@ s_l = len(s)
 
 # find, replace, in (keyword)
 
-# s = "Pandas are cool"
-# index = s.find("a", 2)
-# # print(index)
+'''
+s = "Pandas are cool"
+index = s.find("a", 2)
+print(index)
 
-# index = s.rfind("a")
-# # print(index)
+index = s.rfind("a")
+print(index)
 
-# s1 = "Rats are cool"
-# print(s1)
-# s1 = s1.replace("Rats", "Pandas")
-# print(s1)
+s1 = "Rats are cool"
+print(s1)
+s1 = s1.replace("Rats", "Pandas")
+print(s1)
+'''
 
 # len, [] accessor
 
@@ -173,23 +179,30 @@ s_l = len(s)
 # # Fun fact, slicing aka substringing works with lists as well
 # print(class_student_2[1:4])
 
-# #           0        1          2         3         4
-# session = ["Neil", "Nitya", "Gaurav", "Aashita", "Aiden"]
-# #         -5         -4        -3         -2        -1
-# # Adding To Lists
-# # session.append("Soham")
-# print(session)
+#           0        1          2         3         4
+session = ["Neil", "Nitya", "Gaurav", "Aashita", "Aiden"]
+#         -5         -4        -3         -2        -1
+# Adding To Lists
+'''
+session.append("Soham")
+print(session)
+session[1] = "Abhi"
+'''
 
-# # Accessing Lists, using indexes
-# print(session[0])
-# print(session[len(session)-1])
 
-# # fancy accessing
-# # slicing using :
-# # session[start:end:step]
-# print(session[0:2]) # accesses the 0th and then the 1st
-# print(session[2:])
-# print(session[:2])
+# Accessing Lists, using indexes
+'''
+print(session[0])
+print(session[len(session)-1])
+'''
+# fancy accessing
+# slicing using :
+# session[start:end:step]
+'''
+print(session[0:2]) # accesses the 0th and then the 1st
+print(session[2:])
+print(session[:2])
+'''
 
 
 
@@ -198,13 +211,17 @@ s_l = len(s)
 
 
 # Pair of fixed data
+'''
 coordinates = (10.5, 20.5)
+'''
 
 # Declaration
 
 # Accessing
-# print(coordinates)
-# print(coordinates[1])
+'''
+print(coordinates)
+print(coordinates[1])
+'''
 
 # ✅ SETS
 # Unordered, does not allow duplicate items
@@ -213,40 +230,52 @@ coordinates = (10.5, 20.5)
 # Unordered Structure of unique items
 
 # Declaration
-# nums = {1,2,3,4,5}
-# print(nums)
-# nums = {1,2,3,4,5,4}
-# print(nums)
+'''
+nums = {1,2,3,4,5}
+print(nums)
+nums = {1,2,3,4,5,4}
+print(nums)
+'''
 
 
 # # Adding
+'''
+nums.add(5)
+print(nums)
+nums.add(8)
+print(nums)
+'''
 
-# nums.add(5)
-# print(nums)
-# nums.add(8)
-# print(nums)
-# # Accessing
-# print(19 in nums)
+# Accessing
+'''
+print(19 in nums)
+'''
 
 # ✅ DICTIONARIES
 # Think of a dictionary whenever you need to associate a specific piece of information 
 # (the value) with a unique identifier (the key)
 
 # Structure with Key-Value pairs
+'''
 exampleDictionary = {
     "apple" : "Fruit that grows on tree",
 }
+'''
 # Declaration
+'''
 person = {
     "name" : "kevin",
     "age" : 24,
     "is_student" : False
 }
+'''
 # Adding
+'''
 print(person)
 person["career"] = "SWE"
 print(person)
 print(person.keys())
+'''
 
 # ----------------------------
 # Lesson 5: Mutable vs Immutable Types
