@@ -68,12 +68,12 @@ zip_code = int("08820")
 # We use the print() function to display output on the screen.
 # You can print text, variables, or both together.
 
-print("Hello, World!")
+# print("Hello, World!")
 
-print("Hello,", "World!", "I am Here!")
+# print("Hello,", "World!", "I am Here!")
 
-w = "World!"
-print("Hello", w, "I AM HERE!", sep="-")
+# w = "World!"
+# print("Hello", w, "I AM HERE!", sep="-")
 
 
 
@@ -81,10 +81,17 @@ p1 = "973"
 p2 = "525"
 p3 = "4577"
 
-print()
-# (973)-525-4577
+# +1 (973)-525-4577
+'''
+print("("+p1+")",p2,p3,sep='-')
+print("(",p1,")","-", p2, "-",p3, sep="")
 
+phone_number = f"({p1})-{p2}-{p3}"
+print(phone_number)
+print(f"({p1})-{p2}-{p3}")'''
 
+print(f"+{1+34} ({p1})-{p2}-{p3}")
+print("({p1})-{p2}-{p3}")
 
 # Strings can be combined with commas (which adds spaces),
 # or with f-strings (which embed values directly inside the text).
