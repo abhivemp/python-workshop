@@ -106,24 +106,29 @@ z = "kevin" * 3
 "01234"
 s = "first_index ... last_index"
 s_l = len(s)
-print(s_l)
-print(s[0])
-print(s[s_l-1])
+# print(s_l)
+# print(s[0])
+# print(s[s_l-1])
 # "a"
 # 00
 # "alphabet"
 # 07
 # print(name[0])
 # 
-expression = input("Enter expression: ")
-first_number = expression[0]
-second_number = expression[len(expression)-1]
-operator = expression[2]
+# expression = input("Enter expression: ")
+# first_number = expression[0]
+# second_number = expression[len(expression)-1]
+# operator = expression[2]
 
-print(f"{first_number} {operator} {second_number} = {int(first_number) + int(second_number)}")
+# print(f"{first_number} {operator} {second_number} = {int(first_number) + int(second_number)}")
 
 
-
+# numbers = input("Input your numbers separated by a space")
+# num1, num2 = numbers.split()
+# num1 = float(num1.replace(","," "))
+# num2 = float(num1.replace(","," "))
+# result  = num1 + num2
+# print(result)
 
 
 
@@ -135,7 +140,19 @@ print(f"{first_number} {operator} {second_number} = {int(first_number) + int(sec
 
 # find, replace, in (keyword)
 
-# len, [] accessor, splicing
+# s = "Pandas are cool"
+# index = s.find("a", 2)
+# # print(index)
+
+# index = s.rfind("a")
+# # print(index)
+
+# s1 = "Rats are cool"
+# print(s1)
+# s1 = s1.replace("Rats", "Pandas")
+# print(s1)
+
+# len, [] accessor
 
 
 
@@ -149,22 +166,45 @@ print(f"{first_number} {operator} {second_number} = {int(first_number) + int(sec
 # Creates a list of items
 # Think of a list whenever the order of items matters, and you expect to add, remove, or change items
 
-# Declaration
+# # Declaration
+# class_student_1 = "Neil"
+# class_student_2 = "Nitya"
 
-# Adding To Lists
+# # Fun fact, slicing aka substringing works with lists as well
+# print(class_student_2[1:4])
 
-# Accessing Lists
+# #           0        1          2         3         4
+# session = ["Neil", "Nitya", "Gaurav", "Aashita", "Aiden"]
+# #         -5         -4        -3         -2        -1
+# # Adding To Lists
+# # session.append("Soham")
+# print(session)
+
+# # Accessing Lists, using indexes
+# print(session[0])
+# print(session[len(session)-1])
+
+# # fancy accessing
+# # slicing using :
+# # session[start:end:step]
+# print(session[0:2]) # accesses the 0th and then the 1st
+# print(session[2:])
+# print(session[:2])
+
 
 
 # ✅ TUPLES
 # Think of a tuple when you have a collection of items that represents a single, unchangeable thing. Once you create it, it should never be modified
 
+
 # Pair of fixed data
+coordinates = (10.5, 20.5)
 
 # Declaration
 
 # Accessing
-
+# print(coordinates)
+# print(coordinates[1])
 
 # ✅ SETS
 # Unordered, does not allow duplicate items
@@ -173,19 +213,40 @@ print(f"{first_number} {operator} {second_number} = {int(first_number) + int(sec
 # Unordered Structure of unique items
 
 # Declaration
+# nums = {1,2,3,4,5}
+# print(nums)
+# nums = {1,2,3,4,5,4}
+# print(nums)
 
-# Adding
 
-# Accessing
+# # Adding
+
+# nums.add(5)
+# print(nums)
+# nums.add(8)
+# print(nums)
+# # Accessing
+# print(19 in nums)
 
 # ✅ DICTIONARIES
-# Think of a dictionary whenever you need to associate a specific piece of information (the value) with a unique identifier (the key)
+# Think of a dictionary whenever you need to associate a specific piece of information 
+# (the value) with a unique identifier (the key)
 
 # Structure with Key-Value pairs
-
+exampleDictionary = {
+    "apple" : "Fruit that grows on tree",
+}
 # Declaration
-
+person = {
+    "name" : "kevin",
+    "age" : 24,
+    "is_student" : False
+}
 # Adding
+print(person)
+person["career"] = "SWE"
+print(person)
+print(person.keys())
 
 # ----------------------------
 # Lesson 5: Mutable vs Immutable Types
