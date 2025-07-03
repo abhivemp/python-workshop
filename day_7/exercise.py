@@ -1,4 +1,3 @@
-```
 """
 --- The Simple Zoo Manager (Advanced Edition) ---
 
