@@ -74,3 +74,23 @@ import pandas
 # - Avoids conflicts between projects
 # - Keeps your global Python installation clean
 # - Easy to reproduce environments using `requirements.txt`
+'''
+
+## To Create
+python -m venv venv
+
+## To Activate
+source venv/Scripts/active
+
+## To Deactivate
+deactivate
+
+## To View Packages Installed
+pip freeze
+
+## To Install Packages
+pip install package
+
+## To Uninstall Packages
+pip uninstall package
+'''
